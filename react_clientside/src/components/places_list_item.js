@@ -14,6 +14,7 @@ export const PlacesListItem = (props) => {
 
     </div>
     <div className='list-item-info-section'>
+      <span></span>
       <span>{JSON.stringify(props.data.name)}</span>
       <span>Type of Attraction: {JSON.stringify(props.data.types[0])}</span>
       <span>Rating: {JSON.stringify(props.data.rating)}</span>
