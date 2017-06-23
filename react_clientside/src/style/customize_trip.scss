@@ -1,0 +1,14 @@
+.list-item-container {
+  display:flex;
+  padding:20px;
+  border-top: 1px solid;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.list-item-info-section {
+  display:flex;
+  flex-direction: column;
+  margin-left: 30px;
+}

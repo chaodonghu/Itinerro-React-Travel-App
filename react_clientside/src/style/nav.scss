@@ -1,83 +1,8 @@
-h1 {
-  margin:0;
-  font-size: 3.5rem;
-}
-h2 {
-  text-align:center;
-  padding-left:30px;
-  color:#13293D;
-}
-
-h3 {
-  font-size:16px;
-  margin: 0 0 10px 0;
-  color:#13293D;
-}
-
-.home-main {
-  background: url(/static/images/travel-planning.jpg);
-  height: calc(100vh - 150px);
-  background-position: center top;
-  background-size: 112%;
-  background-repeat: no-repeat;
-  padding-top: 30px;
-}
-
-@media (max-width: 700px){
-  .home-main {
-  background-size: 250%;
-  }
-}
-
 
 .material-icons {
   background-color:#cc2936;
 }
 
-#signup-form {
-  width: 400px;
-  margin: 0 auto;
-  position: relative;
-  background-color: #2E2C2C;
-  opacity: 0.86;
-  padding:5px 20px 10px 20px;
-  color:#fff;
-  input {
-  border-bottom: 3px solid teal;
-  color:#fff;
-  width:88%;
-  margin: 0 auto;
-  }
-  label {
-    margin-left:25px;
-  }
-  h1 {
-    padding: 11px 11px;
-  }
-}
-
-
-#login-form {
-  width: 400px;
-  margin: 0 auto;
-  position: relative;
-  background-color: #2E2C2C;
-  opacity: 0.86;
-  padding:5px 20px 10px 20px;
-  color:#fff;
-  input {
-  border-bottom: 3px solid teal;
-  color:#fff;
-  width:88%;
-  margin: 0 auto;
-  }
-  label {
-    margin-left:25px;
-  }
-  h1 {
-    padding: 11px 11px;
-  }
-}
 nav.navbar {
   border-radius: 0 !important;
   margin-bottom:0;
@@ -126,13 +51,7 @@ nav.navbar {
   padding: 15px 30px;
 }
 
-.chip {
-  background-color: teal;
-}
-.form-group-btn {
-  display:flex;;
-  justify-content: center;
-}
+
 
 .direction-bar {
   height:70px;
@@ -149,78 +68,6 @@ label {
   color: teal;
 }
 
-.path-btn {
-  height:160px;
-  width:100%;
-  background-color:teal;
-  border-radius:12px;
-}
-
-.create-a-trip-btn {
-
-}
-
-// .create-trip-section{
-//   display:flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom:30px;
-// }
-
-
-.input-field {
-  width:80%;
-  margin:0 auto;
-  margin-top:30px;
-  label {
-    color:#80CBC4;
-  }
-}
-
-.input[type=text]:focus {
-  border-bottom: 3px solid #80CBC4;
-  box-shadow: 0 1px 0 0 #000;
-}
-
-input#destination_input{
-  color:#fff;
-  margin-bottom: 0;
-  border-bottom: 3px solid #80CBC4;
-  :focus {
-    border-bottom: 3px solid #80CBC4;
-  }
-}
-input#dates_input {
-  color:#fff;
-  margin-bottom: 0;
-  border-bottom: 3px solid #80CBC4;
-  :focus {
-    border-bottom: 3px solid #80CBC4;
-  }
-  label {
-    color:#80CBC4;
-  }
-}
-
-label {
-  margin-bottom:0;
-
-}
-.list-item-container {
-  display:flex;
-  padding:20px;
-  border-top: 1px solid;
-  width: 400px;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-.list-item-info-section {
-  display:flex;
-  flex-direction: column;
-  margin-left: 30px;
-}
 
 .place-img-div img {
   height: 75px;

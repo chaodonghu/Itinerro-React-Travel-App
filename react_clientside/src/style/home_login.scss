@@ -1,0 +1,79 @@
+h1 {
+  margin:0;
+  font-size: 3.5rem;
+}
+h2 {
+  text-align:center;
+  padding-left:30px;
+  color:#13293D;
+}
+
+h3 {
+  font-size:16px;
+  margin: 0 0 10px 0;
+  color:#13293D;
+}
+
+.home-main {
+  background: url(/static/images/travel-planning.jpg);
+  height: calc(100vh - 150px);
+  background-position: center top;
+  background-size: 112%;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+
+@media (max-width: 700px){
+  .home-main {
+  background-size: 250%;
+  }
+}
+
+#signup-form {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #2E2C2C;
+  opacity: 0.86;
+  padding:5px 20px 10px 20px;
+  color:#fff;
+  input {
+  border-bottom: 3px solid teal;
+  color:#fff;
+  width:88%;
+  margin: 0 auto;
+  }
+  label {
+    margin-left:25px;
+  }
+  h1 {
+    padding: 11px 11px;
+  }
+}
+
+#login-form {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #2E2C2C;
+  opacity: 0.86;
+  padding:5px 20px 10px 20px;
+  color:#fff;
+  input {
+  border-bottom: 3px solid teal;
+  color:#fff;
+  width:88%;
+  margin: 0 auto;
+  }
+  label {
+    margin-left:25px;
+  }
+  h1 {
+    padding: 11px 11px;
+  }
+}
+
+.form-group-btn {
+  display:flex;;
+  justify-content: center;
+}
