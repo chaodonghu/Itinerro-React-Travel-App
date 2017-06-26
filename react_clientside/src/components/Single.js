@@ -56,7 +56,8 @@ class Single extends React.Component {
           </span>
         </div>
       </section>
-      <section className=''>
+      <section className='dash-section'>
+        <ul className=''>
         {/* <ul key={`trip-${place.id}`}> */}
         {/* <h2 className='dash-city-name'>Trip #{placesData.id} to {placesData.city}</h2> */}
         <GoogleMap places={placesData}/>
@@ -64,7 +65,7 @@ class Single extends React.Component {
         {/* <h2 className='dash-city-name'>{i.city}</h2> */}
         <SelectedPlacesList places={placesData}/>
         {/* </div> */}
-      {/* </ul> */}
+      </ul>
         {/* <Photo id={id} post={post} /> */}
         {/* <Comments postComments={postComments} /> */}
       </section>
