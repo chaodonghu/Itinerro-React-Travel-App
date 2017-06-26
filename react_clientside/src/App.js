@@ -20,7 +20,8 @@ import Nav from './components/Nav';
 import CreateTrip from './components/CreateTrip';
 import SignupPage from './components/SignupPage';
 import LoginPage from './components/LoginPage';
-import RealDashboard from './components/real_dashboard';
+// import CustomizeTrip from './components/CreateTrip';
+import Dashboard from './components/real_dashboard';
 import FlashMessagesList from './components/flash/FlashMessagesList';
 import Single from './components/Single';
 
@@ -55,7 +56,8 @@ export default class App extends React.Component {
               <Route path='/signup' component={SignupPage} />
               <Route path='/login' component={LoginPage} />
               <Route path='/create-trip' component={requireAuth(CreateTrip)}/>
-              <Route path='/real-dashboard' component={requireAuth(RealDashboard)} />
+              
+              <Route path='/dashboard' component={requireAuth(Dashboard)} />
 
             </div>
             </MuiThemeProvider>

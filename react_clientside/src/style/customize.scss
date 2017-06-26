@@ -51,13 +51,6 @@
     background-size: 29vw;
 }
 
-@media (max-width:400px ){
-  .place-img-div{
-    width:350px;
-    background-size: 89vw;
-
-  }
-}
 
 .photo-grid {
   display: flex;
@@ -88,7 +81,7 @@
   background: white;
 }
 
-/* TODO broken CSS?
+// TODO broken CSS?
 //  Stylelint //
 
 .grid-figure
@@ -105,7 +98,7 @@
     width 100%
     margin 0
 
-*/
+
 
 .grid-photo {
   width: calc(100% + 4rem);
@@ -116,4 +109,48 @@
 
 .grid-photo-wrap {
     position: relative
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px ){
+  .place-img-div{
+    background-size: 89vw;
+  }
+}
+
+
+
+@media (max-width:1120px) {
+  .place-img-div {
+    background-size: 40vw
+  }
 }
