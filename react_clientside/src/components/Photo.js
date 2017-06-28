@@ -38,16 +38,12 @@ class Photo extends React.Component {
           <p>{this.props.post.city} - Trip # {this.props.post.id}</p>
           </Link>
           <div className="control-buttons">
-            <button
-              onClick={this.props.increment.bind(null, this.props.post.id - 1)}
-              className="likes">&hearts;{this.props.likes[this.props.post.id - 1].likes}
-            </button>
             <Badge
               badgeContent={this.props.likes[this.props.post.id - 1].likes}
               primary={true}
               badgeStyle={{top: 12, right: 12}}
               >
-                <IconButton tooltip="Likes" onTouchTap={this.props.increment.bind(null, this.props.post.id - 1)}>
+                <IconButton tooltip="Likes" onClick={this.props.increment.bind(null, this.props.post.id - 1)}>
                 <FavoriteIcon />
                 </IconButton>
             </Badge>

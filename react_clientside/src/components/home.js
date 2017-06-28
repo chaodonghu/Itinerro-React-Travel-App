@@ -12,6 +12,13 @@ export default class Home extends React.Component {
   }
 
   render() {
+    const styles = {
+            fontFamily: 'Menlo-Regular, Menlo, monospace',
+            fontSize: 14,
+            lineHeight: '10px',
+            color: 'white',
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
+        }
     return (
       <div>
       <Header/>

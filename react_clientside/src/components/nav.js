@@ -51,11 +51,11 @@ class Nav extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-              <a className="navbar-brand" href="#">
+              <Link to="/" className="navbar-brand">
                 <span className="glyphicon glyphicon-plane"></span>
                 <span className="glyphicon glyphicon-globe"></span>
                 TravelRoo
-              </a>
+              </Link>
               {/* <img src='/static/images/travelroo-logo.jpg' /> */}
           </div>
           {/* <!-- Navbar links --> */}

@@ -24,15 +24,10 @@ class RealDashboard extends React.Component {
     // debugger;
     return (
       <div>
-        {/* <section className='info-bar'>
+        <section className='info-bar'>
           <div className='direction-bar'>
-
-            <span>You are going to love {this.props.cities.join('')}!</span>
-            <span className='direction-additional-info'>Drag & Drop to perfect your trip!</span>
-            <span className='direction-additional-info'>View your plans per day!
-            </span>
           </div>
-        </section> */}
+        </section>
         {/* <section>
           <GridListExampleSimple/>
         </section> */}
