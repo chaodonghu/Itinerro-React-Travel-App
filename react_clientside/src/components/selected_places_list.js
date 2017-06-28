@@ -4,21 +4,20 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import SelectedPlacesListItem from './selected_places_list_item';
 
-
 class SelectedPlacesList extends React.Component {
   constructor(props) {
     super(props);
     this.moveItem = this.moveItem.bind(this);
     this.state = {
-      locationsList: props.places ? Object.values(props.places) : []
+      placesList: props.places ? Object.values(props.places) : []
     };
   }
 
   moveItem(dragIndex, hoverIndex) {
-    const dragItem = this.state.locationsList[dragIndex];
+    const dragItem = this.state.placesList[dragIndex];
 
     this.setState(update(this.state, {
-      locationsList: {
+      placesList: {
         $splice: [
           [dragIndex, 1],
           [hoverIndex, 0, dragItem],
@@ -28,21 +27,20 @@ class SelectedPlacesList extends React.Component {
   }
 
   render() {
-    // debugger;
     return (
-    <div className='selected-places-container'>
-      {this.props.places
-        .map((location, i) =>
+    <ul className='selected-places-container'>
+      {this.state.placesList
+        .map((place, i) =>
           <SelectedPlacesListItem
-            location={location}
-            key={location.id}
+            place={place}
+            key={place.id}
             index={i}
-            id={location.id}
+            id={place.id}
             moveItem={this.moveItem}
           />
         )
       }
-    </div>);
+    </ul>);
   }
 }
 

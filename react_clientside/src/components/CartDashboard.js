@@ -43,6 +43,7 @@ export default class CartDashboard extends React.Component {
           <section className='picks'>
             <MiniCartDashboard
               city={this.props.searchTerm}
+              trip_id={this.props.trip_id}
               collapseSelected={this.collapseSelected}
               handleCollapseSelected={this.handleCollapseSelected}
             />

@@ -1,0 +1,17 @@
+.dashboard-map-sidebar-container {
+  display:flex;
+}
+.combine-map-and-sidebar {
+  display:flex;
+  width:100%;
+}
+.comments-section {
+  display:none;
+}
+
+.dash-map {
+  display: 'flex';
+  flexDirection: 'column';
+  flexGrow: '1';
+
+}

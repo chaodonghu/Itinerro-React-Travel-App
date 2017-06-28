@@ -9,24 +9,15 @@ import {getPlacesSelection} from '../actions/databasePlacesActions';
 class RealDashboard extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
-  }
-
-  componentWillMount() {
-    this.props.getPlacesSelection(this.props.user_id);
-    console.log('component did mount', this.props);
+    this.state = {};
   }
 
   render() {
-    // console.log('RealDashboard', this.state);
-    console.log('COMPONENT MOUNTED', this.props)
-    console.log('PLACES ID', this.props.places[0] )
-    // debugger;
+    console.log('dashboard props', this.props);
     return (
       <div>
         {/* <section className='info-bar'>
           <div className='direction-bar'>
-
             <span>You are going to love {this.props.cities.join('')}!</span>
             <span className='direction-additional-info'>Drag & Drop to perfect your trip!</span>
             <span className='direction-additional-info'>View your plans per day!
@@ -56,20 +47,18 @@ class RealDashboard extends React.Component {
             <PhotoGrid posts={this.props.places}/>
         </section>
       </div>
-    )
+    );
   }
 }
 
-const mapStateToProps = state => {
-  console.log('real_dashboard state', state)
-  return {
-    // cities: Object.keys(state.selectedPlaces),
-    // storeDates: state.storeDates,
-    user_id: state.auth.user.id,
-    places: state.trips.places
-  };
+const mapStateToProps = state => ({
+  user_id: state.auth.user.id,
+  places: state.trips.places
+});
+
+const mergeProps = (stateProps, dispatchProps) => {
+  stateProps.places.length === 0 && getPlacesSelection(dispatchProps.dispatch, stateProps.user_id);
+  return ({places: stateProps.places});
 };
 
-export default connect(mapStateToProps, {getPlacesSelection} //grabbing pieces of information from global state
-//  mapDispatchToProps
-)(RealDashboard);
+export default connect(mapStateToProps, dispatch => ({dispatch}), mergeProps)(RealDashboard);

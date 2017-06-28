@@ -22,7 +22,7 @@ import SignupPage from './components/SignupPage';
 import LoginPage from './components/LoginPage';
 import RealDashboard from './components/real_dashboard';
 import FlashMessagesList from './components/flash/FlashMessagesList';
-import Single from './components/Single';
+import ItineraryView from './components/ItineraryView';
 
 
 const store = createStore(
@@ -52,12 +52,12 @@ export default class App extends React.Component {
             <FlashMessagesList />
             <Nav />
               <Route path='/' component={Home}/>
-              <Route path="/view/:postId" component={Single}/>
               <Route path='/signup' component={SignupPage} />
               <Route path='/login' component={LoginPage} />
               <Route path='/create-trip' component={requireAuth(CreateTrip)}/>
-              <Route path='/real-dashboard' component={requireAuth(RealDashboard)} />
-
+              {//<Route path='/real-dashboard' component={requireAuth(RealDashboard)} />
+            }
+              <Route path='/itinerary/:trip_id' component={requireAuth(ItineraryView)} />
             </div>
             </MuiThemeProvider>
           </Router>

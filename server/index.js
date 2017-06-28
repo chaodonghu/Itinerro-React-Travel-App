@@ -3,11 +3,6 @@ import path from 'path';
 import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
 
-// import webpack from 'webpack';
-// import webpackMiddleware from 'webpack-dev-middleware';
-// import webpackHotMiddleware from 'webpack-hot-middleware';
-// import webpackConfig from '../webpack.config';
-
 import users from './routes/users';
 import auth from './routes/auth';
 import places from './routes/trips';
@@ -39,7 +34,7 @@ app.use('/api/data', (req, res) => {
 
 app.use('/api/trips', places);
 
-var staticRoute = __dirname + '/../react_clientside/public';
+const staticRoute = __dirname + '/../react_clientside/public';
 
 app.use('/static', express.static(staticRoute));
 // console.log('dirname', __dirname);
@@ -60,4 +55,4 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-app.listen(3000, () => console.log('Running on localhost:3000'))
+app.listen(3000, () => console.log('Running on localhost:3000'));

@@ -12,7 +12,7 @@ class GoogleMap extends React.Component {
 
   componentDidMount() {
     // debugger;
-    // console.log('GOOGLE MAPS', this.props)
+    console.log('GOOGLE MAPS loaded', this.props)
     const mapOptions = {
         center: this.mapCenterLatLng(),
         zoom: +this.props.zoom

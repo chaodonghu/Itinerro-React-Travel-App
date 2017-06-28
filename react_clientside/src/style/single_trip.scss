@@ -6,7 +6,7 @@
   display: flex;
   margin: 0;
 
-  height: calc(100vh - 73px - 200px);
+  height: calc(100vh - 73px);
   width: 100%;
 
   -webkit-box-orient: horizontal;
@@ -74,13 +74,12 @@
   margin: 0;
 }
 
-.item {
+.selected-places-item-li-contents {
   display: flex;
-  flex-direction: row;
   border-bottom: 1px solid #eeeeee;
   padding: 10px;
   text-decoration: none;
-  cursor: pointer;
+  cursor: move;
 
   h1 {
     flex: 2;
@@ -101,7 +100,16 @@
 }
 
 
+#dash-sidemenu-btn {
+  position: absolute;
+  margin-left: 27px;
+  margin-top: 40px;
+}
 
+#extras-btn {
+  right: 50px;
+  bottom: 40px;
+}
 
 // @custom-media --screen-phone (width <= 35.5em);
 // @custom-media --screen-phone-lg (width > 35.5em);

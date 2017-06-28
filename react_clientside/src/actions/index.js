@@ -43,7 +43,7 @@ export function fetchGoogleData(dispatch, query) {
         payload: {
           showResults: true,
           locationsData: data,
-          searchTerm: query
+          queryData: query,
         }
       });
     });
