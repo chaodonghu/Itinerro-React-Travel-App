@@ -23,6 +23,7 @@ export default class Intro extends React.Component {
                       <Avatar src="static/images/dong.png" size={200}/>
                       <h3 className="lead text-muted">
                       Dong
+                      @chaodonghu
 
                     </h3>
                     </Link>
@@ -31,7 +32,8 @@ export default class Intro extends React.Component {
                       <Link to='https://www.github.com/ssbelle'></Link>
                       <Avatar src="static/images/shawna.jpg" size={200}/>
                       <h3 className="lead text-muted">
-                      Shauna
+                      Shawna
+                      @ssbelle
                     </h3>
                     </div>
                   </div>

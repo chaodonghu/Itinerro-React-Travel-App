@@ -5,7 +5,7 @@ import {fetchGoogleData} from '../actions/';
 const PlacesListItem = props =>
   <div className={`list-item-container ${props.collapseSelected}`} id='list-item-container'>
       {//console.log('placesListItem props', props)
-      props.data.photos && <div className='place-img-div' style={{backgroundImage:`url(https://maps.googleapis.com/maps/api/place/photo?maxheight=300&maxwidth=300&photoreference=${props.data.photos[0].photo_reference}&key=AIzaSyANfEEYlXnOIAq0qn3l48YABVrxQL6DXj0)`}}/>
+      props.data.photos && <div className='place-img-div' style={{backgroundImage:`url(https://maps.googleapis.com/maps/api/place/photo?maxheight=300&maxwidth=300&photoreference=${props.data.photos[0].photo_reference}&key=AIzaSyCXiqhqWirUweH866gqhPGCtSQ3tI9wMtM)`}}/>
     }
 
     <div className='list-item-info-section'>

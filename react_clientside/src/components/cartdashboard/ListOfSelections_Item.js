@@ -14,7 +14,7 @@ const ListOfSelectionsItem = (props) => {
       >
         <i className="material-icons">clear</i>
       </button>
-      {props.id && <div className='dash-item-img' style={{backgroundImage:`url(https://maps.googleapis.com/maps/api/place/photo?maxheight=100&maxwidth=100&photoreference=${props.location.photos[0].photo_reference}&key=AIzaSyANfEEYlXnOIAq0qn3l48YABVrxQL6DXj0)`}} >
+      {props.id && <div className='dash-item-img' style={{backgroundImage:`url(https://maps.googleapis.com/maps/api/place/photo?maxheight=100&maxwidth=100&photoreference=${props.location.photos[0].photo_reference}&key=AIzaSyCXiqhqWirUweH866gqhPGCtSQ3tI9wMtM)`}} >
       </div>
     }
       <div className='dash-item-text'>
