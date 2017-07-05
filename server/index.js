@@ -37,6 +37,8 @@ app.use('/api/trips', places);
 
 const staticRoute = __dirname + '/../react_clientside/public';
 
+// app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/static', express.static(staticRoute));
 // console.log('dirname', __dirname);
 // console.log('staticRoute', staticRoute)
@@ -44,13 +46,13 @@ app.use('/static', express.static(staticRoute));
 // const compiler = webpack(webpackConfig);
 
 
-
-// app.use(webpackMiddleware(compiler, {
-//   hot: true,
-//   publicPath: "http://localhost:3200",
-//   // noInfo: true
-// }));
-// app.use(webpackHotMiddleware(compiler));
+// if (process.env.NODE_ENV !== 'production') {
+//   app.use(webpackMiddleware(compiler, require('../webpack.config')));
+//   app.use(webpackHotMiddleware(compiler));
+// } else {
+//   // do production stuff here
+//   app.use('/build', express.static(__dirname + '../build'));
+// }
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
