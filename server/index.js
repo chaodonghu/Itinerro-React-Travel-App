@@ -45,15 +45,15 @@ app.use('/static', express.static(staticRoute));
 
 // const compiler = webpack(webpackConfig);
 
-
-// if (process.env.NODE_ENV !== 'production') {
-//   app.use(webpackMiddleware(compiler, require('../webpack.config')));
-//   app.use(webpackHotMiddleware(compiler));
-// } else {
-//   // do production stuff here
-//   app.use('/build', express.static(__dirname + '../build'));
-// }
-
+/*
+if (process.env.NODE_ENV !== 'production') {
+  app.use(webpackMiddleware(compiler, require('../webpack.config')));
+  app.use(webpackHotMiddleware(compiler));
+} else {
+  // do production stuff here
+  app.use('/build', express.static(__dirname + '../build'));
+}
+*/
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
