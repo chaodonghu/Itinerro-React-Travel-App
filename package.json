@@ -2,10 +2,10 @@
   "name": "FinalProject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "nodemon --watch server --exec babel-node -- server/index.js",
+    "start-server": "nodemon --watch server --exec babel-node -- server.js",
     "start-webpack": "webpack-dev-server --watch-poll",
     "start": "concurrently -n \"server,webpack\" -c blue,green \"npm run start-server\" \"npm run start-webpack\"",
     "heroku-postbuild": "NODE_ENV=production webpack --progress --colors --config webpack.prod.config.js"

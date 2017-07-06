@@ -10,9 +10,8 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
-    publicPath: '/build/'
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
   },
 
   plugins: [
@@ -25,7 +24,6 @@ module.exports = {
     // }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production'),
         'API_HOST': 'https://itineroo.herokuapp.com/'
       }
     })
