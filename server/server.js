@@ -8,6 +8,7 @@ import auth from './routes/auth';
 import places from './routes/trips';
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -37,8 +38,8 @@ app.use('/api/trips', places);
 const staticRoute = __dirname + '/../react_clientside/public';
 
 app.use('/static', express.static(staticRoute));
-// console.log('dirname', __dirname);
-// console.log('staticRoute', staticRoute)
+console.log('dirname', __dirname);
+console.log('staticRoute', staticRoute)
 
 // const compiler = webpack(webpackConfig);
 
@@ -52,7 +53,7 @@ app.use('/static', express.static(staticRoute));
 // app.use(webpackHotMiddleware(compiler));
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, './index.html'));
+  res.sendFile(path.join(__dirname, '/../react_clientside/public/index.html'));
 });
 
-app.listen(3000, () => console.log('Running on localhost:3000'));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}. Visit http://localhost:${PORT}/ in your browser`));
