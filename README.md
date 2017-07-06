@@ -14,7 +14,7 @@ A trip planning app built to allow friends and family to collaborate, vote and c
 * Shawna Lynn
 
 ## Project Screenshots
-![](.assets/itineroo-overview-desktop-frontpage.jpg)
+![](./assets/itineroo-overview-desktop-frontpage.jpg)
 ![](./assets/itineroo-overview-mobile-1.jpg)
 ![](./assets/itineroo-overview-mobile-2.jpg)
 ![](./assets/itineroo-overview-mobile-3.jpg)
