@@ -18,7 +18,7 @@ export default class Header extends React.Component {
           <div className="header-content">
             <div className="header-content-inner">
               <h1>Plan. Discuss. Travel.</h1>
-              <h5>Keep it <span style={{'fontWeight': '900', 'text-decoration': 'underline'}}>"plane"</span> and simple.</h5>
+              <h5>Keep it <span style={{'fontWeight': '900', 'textDecoration': 'underline'}}>"plane"</span> and simple.</h5>
               <h5>Take the stress out of extensive trip planning and collaborating procedures</h5>
               <Link to="/signup">
                 <FlatButton style={{
