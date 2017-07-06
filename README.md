@@ -1,4 +1,4 @@
-# Bon Appetit
+# Itineroo
 
 A trip planning app built to allow friends and family to collaborate, vote and comment on a desired itinerary for any city using Google Places and Google Maps API.
 
