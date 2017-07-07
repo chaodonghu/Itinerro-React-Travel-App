@@ -1,5 +1,5 @@
 import React from 'react';
-import PlacesListItem from './places_list_item';
+import PlacesListItem from './Places_list_item';
 
 export const PlacesList = (props) => {
   //console.log('PlacesList props', props);

@@ -1,7 +1,7 @@
 import React from 'react';
 import {findDOMNode} from 'react-dom';
 import {DragSource, DropTarget} from 'react-dnd';
-import Comments from './trip_comments';
+import Comments from './Trip_comments';
 
 import {connect} from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';

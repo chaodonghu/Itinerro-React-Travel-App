@@ -1,6 +1,6 @@
 import React from 'react';
-import {PlacesList} from './places_list';
-import MiniCartDashboard from './cartdashboard/MiniCartDashboard';
+import {PlacesList} from './Places_list';
+import MiniCartDashboard from './Cartdashboard/MiniCartDashboard';
 
 export default class CartDashboard extends React.Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React from 'react';
 import update from 'react/lib/update';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import SelectedPlacesListItem from './selected_places_list_item';
+import SelectedPlacesListItem from './Selected_places_list_item';
 
 
 class SelectedPlacesList extends React.Component {
