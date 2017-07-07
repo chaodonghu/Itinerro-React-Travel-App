@@ -62,33 +62,17 @@ app.use('/api/trips', places);
 app.use(express.static('public'));
 
 // Route to capture client-side routes and use the statically served files.
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+// });
 
-
-
-/*
-const staticRoute = __dirname + '/../react_clientside/public';
-
-// app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/static', express.static(staticRoute));
-// console.log('dirname', __dirname);
-// console.log('staticRoute', staticRoute)
-
-const compiler = webpack(webpackConfig);
-
-if (process.env.NODE_ENV !== 'production') {
-  app.use(webpackMiddleware(compiler, require('../webpack.config')));
-  app.use(webpackHotMiddleware(compiler));
-} else {
-  // do production stuff here
-  app.use(express.static(path.resolve('../build')));
-}
+// if (process.env.NODE_ENV !== 'production') {
+  // const staticRoute = __dirname + '/../public';
+  // app.use('/', express.static(staticRoute));
+// }
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './index.html'));
 });
-*/
+
 app.listen(PORT, () => console.log(`Listening on port ${PORT}. Visit http://localhost:${PORT}/ in your browser`));
