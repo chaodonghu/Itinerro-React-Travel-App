@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import classnames from 'classnames';
 import validateInput from '../../../server/shared/validations/signup.js';
-import TextFieldGroup from './common/TextFieldGroup';
+import TextFieldGroup from './Common/TextFieldGroup';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import DoneIcon from 'material-ui/svg-icons/action/done';
 

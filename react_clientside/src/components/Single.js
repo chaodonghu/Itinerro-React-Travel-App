@@ -1,13 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import GoogleMap from './google_map';
-import SelectedPlacesList from './selected_places_list';
+import GoogleMap from './Google_map';
+import SelectedPlacesList from './Selected_places_list';
 // import GridListExampleSimple from './GridDashboard';
 import PhotoGrid from './PhotoGrid';
 import {getPlacesSelection} from '../actions/databasePlacesActions';
 import Photo from './Photo';
 // import { Link } from 'react-router-dom';
-import Comments from './trip_comments';
+import Comments from './Trip_comments';
 import {SideNav, Button, SideNavItem} from 'react-materialize';
 
 import {findDOMNode} from 'react-dom';
@@ -64,7 +64,7 @@ class Single extends React.Component {
   <section className='combine-map-and-sidebar'>
     <SideNav trigger={<a id='dash-sidemenu-btn' className='btn-floating btn-large'><i className='material-icons'>reorder</i></a>} options={{ closeOnClick: true }}>
       <SideNavItem className='heading'>Trip #{placeId} to {placeCity}
-      
+
       </SideNavItem>
       <SideNavItem divider />
       <ul><SelectedPlacesList places={placesData}/></ul>

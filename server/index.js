@@ -7,9 +7,11 @@ import users from './routes/users';
 import auth from './routes/auth';
 import places from './routes/trips';
 
+
 const app = express();
 
 app.use(bodyParser.json());
+
 
 app.use('/api/users', users);
 app.use('/api/auth', auth);
@@ -34,9 +36,7 @@ app.use('/api/data', (req, res) => {
 
 app.use('/api/trips', places);
 
-const staticRoute = __dirname + '/../react_clientside/public';
 
-app.use('/static', express.static(staticRoute));
 // console.log('dirname', __dirname);
 // console.log('staticRoute', staticRoute)
 
@@ -51,8 +51,22 @@ app.use('/static', express.static(staticRoute));
 // }));
 // app.use(webpackHotMiddleware(compiler));
 
-app.get('/*', (req, res) => {
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(__dirname, './index.html'));
+// });
+
+
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-app.listen(3000, () => console.log('Running on localhost:3000'));
+// if(process.env.NODE_ENV === 'production') {
+  const jsRoute = path.join(__dirname, '..', 'dist');
+  const staticRoute = path.join(__dirname, '..', 'react_clientside', 'public');
+
+  app.use('/', express.static(jsRoute));
+  app.use('/static', express.static(staticRoute));
+// }
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`Running on localhost:${PORT}`));

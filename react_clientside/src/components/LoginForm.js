@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import classnames from 'classnames';
 import validateInput from '../../../server/shared/validations/login.js';
-import TextFieldGroup from './common/TextFieldGroup';
+import TextFieldGroup from './Common/TextFieldGroup';
 import { connect } from 'react-redux';
 import { login } from './../actions/authActions';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
