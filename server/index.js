@@ -62,7 +62,7 @@ app.get('/', (req, res) => {
 
 // if(process.env.NODE_ENV === 'production') {
   const jsRoute = path.join(__dirname, '..', 'dist');
-  const staticRoute = path.join(__dirname, '..', 'public');
+  const staticRoute = path.join(__dirname, '..', 'react_clientside', 'public');
 
   app.use('/', express.static(jsRoute));
   app.use('/static', express.static(staticRoute));
