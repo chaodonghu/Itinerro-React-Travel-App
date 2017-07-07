@@ -6,6 +6,7 @@ console.log(path.join(__dirname, '.', 'react_clientside', 'src', 'index.js'));
 
 module.exports = {
   devtool: 'cheap-eval-source-map',
+  context: path.resolve(__dirname, "react_clientside"),
   entry: [
     // 'webpack-hot-middleware/client?reload=true',
     // 'react-hot-loader/patch',
