@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'cheap-eval-source-map',
   entry: [
     // 'webpack-hot-middleware/client?reload=true',
-    'react-hot-loader/patch',
+    // 'react-hot-loader/patch',
     './react_clientside/src/index.js'
   ],
   output: {
@@ -41,8 +41,10 @@ module.exports = {
     }],
   },
   plugins: [
-    new LodashModuleReplacementPlugin,
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin()
+    new webpack.DefinePlugin({
+       'process.env': {
+         'NODE_ENV': JSON.stringify('production')
+       }
+     })
   ]
 };
