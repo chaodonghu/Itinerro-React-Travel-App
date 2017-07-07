@@ -7,7 +7,7 @@ A trip planning app built to allow friends and family to collaborate, vote and c
 * Google Places & Maps API was used to fetch top 20 locations from desired city.
 
 # Demo
-
+http://itineroo.herokuapp.com/
 
 ## Team Members
 * Dong Hu
