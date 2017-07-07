@@ -2,12 +2,15 @@ const webpack = require('webpack');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const path = require("path");
 
+console.log(path.join(__dirname, '.', 'react_clientside', 'src', 'index.js'));
+
 module.exports = {
   devtool: 'cheap-eval-source-map',
   entry: [
     // 'webpack-hot-middleware/client?reload=true',
     // 'react-hot-loader/patch',
-    './react_clientside/src/index.js'
+    // './react_clientside/src/index.js'
+    path.join(__dirname, '.', 'react_clientside', 'src', 'index.js')
   ],
   output: {
     path: path.join(__dirname, 'dist'),
