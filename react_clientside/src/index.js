@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import App from './App';
 import './style/scaffolds.scss';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
