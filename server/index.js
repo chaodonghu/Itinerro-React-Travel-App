@@ -55,15 +55,18 @@ app.use('/api/trips', places);
 //   res.sendFile(path.join(__dirname, './index.html'));
 // });
 
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
-const jsRoute = path.join(__dirname, '..', 'dist');
-const staticRoute = path.join(__dirname, '..', 'public');
+// if(process.env.NODE_ENV === 'production') {
+  const jsRoute = path.join(__dirname, '..', 'dist');
+  const staticRoute = path.join(__dirname, '..', 'public');
 
-app.use('/', express.static(jsRoute));
-app.use('/static', express.static(staticRoute));
+  app.use('/', express.static(jsRoute));
+  app.use('/static', express.static(staticRoute));
+// }
+const PORT = process.env.PORT || 3000;
 
-
-app.listen(3000, () => console.log('Running on localhost:3000'));
+app.listen(PORT, () => console.log(`Running on localhost:${PORT}`));
