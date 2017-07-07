@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "nodemon --watch server --exec babel-node -- server/index.js",
     "start-webpack": "webpack-dev-server --watch-poll",
-    "start": "babel-node server/index.js",
+    "start": "babel-node -- server/index.js",
     "build-webpack-prod": "webpack --config webpack.prod.config.js -p",
     "heroku-postbuild": "npm run build-webpack-prod",
     "dev": "concurrently -n \"server,webpack\" -c blue,green \"npm run start-server\" \"npm run start-webpack\""
@@ -102,8 +102,5 @@
     "watchify": "~2.1.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
-  },
-  "devDependencies": {
-
   }
 }
