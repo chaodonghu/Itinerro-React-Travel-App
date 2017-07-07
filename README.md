@@ -5,6 +5,7 @@ A trip planning app built to allow friends and family to collaborate, vote and c
 * Front-end built using HTML/CSS/SASS, React, Bootstrap, Materialize, Javascript, AJAX
 * Backend was built using Node.js, Express, and PostreSQL,
 * Google Places & Maps API was used to fetch top 20 locations from desired city.
+* Responsive design to allow usage on both mobile and web.
 
 # Demo
 http://itineroo.herokuapp.com/
