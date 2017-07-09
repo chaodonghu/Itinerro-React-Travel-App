@@ -12,7 +12,7 @@ http://itineroo.herokuapp.com/
 
 ## Team Members
 * Dong Hu
-* Shawna Lynn
+* Shawna Lehman
 
 ## Project Screenshots
 ![](./assets/itineroo-overview-desktop-frontpage.jpg)
